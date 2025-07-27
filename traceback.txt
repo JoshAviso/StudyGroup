@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 61, in script
+    Aurora "Once you add a story, pictures, and music, you can release it to the world!"
+Exception: Sayer 'Aurora' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 61, in script
+    Aurora "Once you add a story, pictures, and music, you can release it to the world!"
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 583, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 472, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Aurora' is not defined.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.7.25031702
+Study Group 1.0
+Sun Jul 27 15:09:44 2025
