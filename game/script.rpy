@@ -15,75 +15,111 @@ image Aurora Sad        = "images/characters/aurora_sad.png"
 image Aurora Confused   = "images/characters/aurora_confused.png"
 
 define Celestia = Character("Celestia", color="#9e00c9", what_color="#f8dfff", what_size=26)
-image Celestia Neutral  = "images/characters/celestia_netural.png"
+image Celestia Neutral  = "images/characters/celestia_neutral.png"
 image Celestia Happy    = "images/characters/celestia_happy.png"
 image Celestia Sad      = "images/characters/celestia_sad.png"
-image Celestia Mad      = "images/characters/celestia_mad.png"
+image Celestia Mad      = "images/characters/celestia_angry.png"
 
 define Luis     = Character("Luis", color="#007232", what_color="#daffea", what_size=26)
 image Luis Neutral      = "images/characters/luis_neutral.png"
 image Luis Happy        = "images/characters/luis_happy.png"
 image Luis Sad          = "images/characters/luis_sad.png"
-image Luis Mad          = "images/characters/luis_mad.png"
+image Luis Mad          = "images/characters/luis_angry.png"
 
 define Anthony  = Character("Anthony", color="#ffcc00", what_color="#fff6d3", what_size=26)
 image Anthony Neutral   = "images/characters/anthony_neutral.png"
 image Anthony Happy     = "images/characters/anthony_happy.png"
 image Anthony Sad       = "images/characters/anthony_sad.png"
-image Anthony Mad       = "images/characters/anthony_mad.png"
+image Anthony Mad       = "images/characters/anthony_angry.png"
 
 define Rafael   = Character("Rafael", color="#71d4e8", what_color="#dffaff", what_size=26)
 image Rafael Neutral    = "images/characters/rafael_neutral.png"
 image Rafael Happy      = "images/characters/rafael_happy.png"
 image Rafael Sad        = "images/characters/rafael_sad.png"
-image Rafael Mad        = "images/characters/rafael_mad.png"
+image Rafael Mad        = "images/characters/rafael_angry.png"
 
 define Jonathan = Character("Jonathan", color="#8991a0", what_color="#dce8ff", what_size=26)
 image Jonathan Neutral  = "images/characters/jonathan_neutral.png"
 image Jonathan Happy    = "images/characters/jonathan_happy.png"
 image Jonathan Sad      = "images/characters/jonathan_sad.png"
-image Jonathan Mad      = "images/characters/jonathan_mad.png"
+image Jonathan Mad      = "images/characters/jonathan_angry.png"
 
 define centerAnchor = Position(xanchor=0.5, yanchor=0.0)
 define offscreen_left = (-0.25, 0.0)
 transform offsceen_left_pos:    
     xalign -0.25
+    xanchor 0.5
+    yanchor 0.0
+define far_far_left = (0.05, 0.0)
+transform far_far_left_pos:        
+    xalign 0.05
+    xanchor 0.5
+    yanchor 0.0
 define far_left = (0.1, 0.0)
 transform far_left_pos:         
     xalign 0.1
-define left_left = (0.2, 0.0)
+    xanchor 0.5
+    yanchor 0.0
+define left_left = (0.18, 0.0)
 transform left_left_pos:        
-    xalign 0.2
-define left = (0.25, 0.0)
+    xalign 0.18
+    xanchor 0.5
+    yanchor 0.0
+define left = (0.26, 0.0)
 transform left_pos:             
-    xalign 0.25
-define left_right = (0.3, 0.0)
+    xalign 0.26
+    xanchor 0.5
+    yanchor 0.0
+define left_right = (0.34, 0.0)
 transform left_right_pos:       
-    xalign 0.3
-define center_left = (0.4, 0.0)
+    xalign 0.34
+    xanchor 0.5
+    yanchor 0.0
+define center_left = (0.42, 0.0)
 transform center_left_pos:      
-    xalign 0.4
+    xalign 0.42
+    xanchor 0.5
+    yanchor 0.0
 define center = (0.5, 0.0)
 transform center_pos:           
     xalign 0.5
-define center_right = (0.6, 0.0)
+    xanchor 0.5
+    yanchor 0.0
+define center_right = (0.58, 0.0)
 transform center_right_pos:     
-    xalign 0.6
-define right_left = (0.7, 0.0)
+    xalign 0.58
+    xanchor 0.5
+    yanchor 0.0
+define right_left = (0.66, 0.0)
 transform right_left_pos:       
-    xalign 0.7
-define right = (0.75, 0.0)
+    xalign 0.66
+    xanchor 0.5
+    yanchor 0.0
+define right = (0.74, 0.0)
 transform right_pos:            
-    xalign 0.75
-define right_right = (0.8, 0.0)
+    xalign 0.74
+    xanchor 0.5
+    yanchor 0.0
+define right_right = (0.82, 0.0)
 transform right_right_pos:      
-    xalign 0.8
+    xalign 0.82
+    xanchor 0.5
+    yanchor 0.0
 define far_right = (0.9, 0.0)
 transform far_right_pos:        
     xalign 0.9
+    xanchor 0.5
+    yanchor 0.0
+define far_far_right = (0.95, 0.0)
+transform far_far_right_pos:        
+    xalign 0.95
+    xanchor 0.5
+    yanchor 0.0
 define offscreen_right = (1.25, 0.0)
 transform offscreen_right_pos:  
     xalign 1.25
+    xanchor 0.5
+    yanchor 0.0
 
 # The game starts here.
 
@@ -103,148 +139,247 @@ label start:
     show Aurora Happy at center_pos
     "Woah, the library really is amazing here. My first year at such a prestigious school, all thanks to the hard work I put in to getting accepted in Business Management."
 
-    show Aurora Sad at Move((0.5,0.0), (0.4,0.0), 1.0), Position(xanchor=0.5, yanchor=0.0)
+    show Aurora Sad at Move(center, center_left, 1.0), centerAnchor
     "But, that's the least of my worries, now I have to overcome the hardest challenge yet! Getting to know my new study mates..."
 
-    show Aurora at Move((0.4,0.0), (0.25,0.0), 1.0), Position(xanchor=0.5, yanchor=0.0)
-    show Luis Happy at Move(offscreen_right, right, 1.0), Position(xanchor=0.5, yanchor=0.0)
+    show Aurora at Move(center_left, left, 1.0), centerAnchor
+    show Luis Happy at Move(offscreen_right, right, 1.0), centerAnchor
     voice "voice/L_1_1.mp3"
     Luis "Oh! Hello there beautiful..."
 
-    show Aurora Confused
+    show Aurora Confused at Move(left, left_left, 1.0), centerAnchor
     Aurora "Oh?! Erm... Ah! Hello?"
 
+    show Luis at Move(right, center_right, 1.0), centerAnchor
     voice "voice/L_1_2.mp3"
     Luis "Oh my, a cutie we have here... If you don't mind me asking, Ms. Cutie, if you would happen to know where Business Management Study Group A would be?"
 
-    show Aurora Happy
+    show Aurora Happy at Move(left_left, left_right, 1.0), centerAnchor
     Aurora "Oh! Ah! Yes! Uhm, actually, I'm part of Study Group A! Hahaha! My name's Aurora... Uhm.. How'd you figure out I was a business student?"
 
+    show Luis at Move(center_right, right_left, 1.0), centerAnchor
     voice "voice/L_1_3.mp3"
     Luis "Oho, Ms Aurora... What an elegant name. As for how I knew, I have experience in business, you see. I have a knack for picking out people in a crowd..."
 
+    show Luis Sad at Move(right_left, center_left, 1.0), centerAnchor
+    show Celestia Mad at Move(offscreen_right, right, 1.0), centerAnchor
+    show Aurora Confused at Move(left_right, left, 1.0), centerAnchor
     voice "voice/C_1_1.mp3"
     Celestia "Luis! Luis M. Labrador! Pft! Unbecoming! How unbecoming of you! I let down my guard for one second and you go off to pick up another girl! Let me remind you that you're the future heir to THE Labrador Technical Consultancy..."
 
+    show Luis Neutral at Move(center_left, center, 1.0), centerAnchor
+    show Celestia at Move(right, right_right, 1.0), centerAnchor
     voice "voice/L_1_4.mp3"
     Luis "Oh! Celestia! My dear fiance, don't worry, I was simply asking Ms Aurora for the location of Study Group A. Luck would have it, she is actually part of our group."
 
+    show Celestia Neutral at Move(right_right, right, 1.0), centerAnchor
     voice "voice/C_1_2.mp3"
     Celestia "Oh... Ms Aurora... Hmm... Well I wont blame someone of your background for being blindsided by this buffoon."
 
+    show Aurora Sad at Move(left, left_left, 1.0), centerAnchor
+    show Celestia Mad at Move(right, center_left, 2.0), centerAnchor
+    show Luis Sad at Move(center, center_right, 1.0), centerAnchor
     voice "voice/C_1_3.mp3"
     Celestia "But I would like to warn you, I, Celestia Belmonte, daughter of THE Belmonte Real-Estate Family, am rightfully betrothed to Luis. I hope you do not think you could win his heart with your plain looks and mundane charms. Pft!"
-    # (Celestia walks off)
-
+    
+    show Celestia Neutral at Move(center_left, offscreen_left, 3.0), centerAnchor
+    show Aurora Confused at Move(left_left, left, 1.0), centerAnchor
     Aurora "Ah! Erm..."
 
+    show Luis Happy at Move(center_right, center, 1.0), centerAnchor
     voice "voice/L_1_5.mp3"
     Luis "Oh, don't worry about her, she may be my betrothed, but only because of the arrangement between our families. Yes, she may be beautiful, but it really is what's in the heart that counts. As for you my dear Aurora, I actually find you quite beautiful, from the outside, and I suspect on the inside too."
 
-    # (Luis walks to follow Celestia)
+    show Luis Neutral at Move(center, offscreen_left, 3.0), centerAnchor
+    show Aurora Happy at Move(left, center_left, 1.0), centerAnchor
 
     Aurora "Woah! So I ended up with both Luis Labrador and Celestia Belmonte? I know this was a school known for its business curriculum, but to think those two would be enrolled here."
 
+    show Aurora Neutral at Move(center_left, center, 1.0), centerAnchor
     "After taking a moment to compose myself, I decide to follow after them to the study room."
-    
-    scene bg studyroom
 
+    show Aurora at Move(center, offscreen_left, 3.0), centerAnchor   
+    pause 3.0
+
+    scene bg studyroom
+    show Aurora Neutral at Move(offscreen_right, right_right, 2.0), centerAnchor
+    show Jonathan Neutral at far_left_pos
+    show Rafael Neutral at left_left_pos
+    show Celestia Mad at left_right_pos
+    show Luis Happy at center_left_pos
+    show Anthony Happy at Move(right, center_right, 1.0), centerAnchor
+
+    pause 2.0
+
+    show Anthony at Move(center_right, center, 1.0), centerAnchor
+    show Jonathan at Move(far_left, far_far_left, 1.0), centerAnchor
+    show Rafael at Move(left_left, far_left, 1.0), centerAnchor
+    show Celestia at Move(left_right, left_left, 1.0), centerAnchor
+    show Luis at Move(center_left, left_right, 1.0), centerAnchor
     voice "voice/A_1_1.mp3"
     Anthony "And that's member number six for six! Alright! That makes us complete for our first session and a perfect time for us to get to know each other. I'll go first, name's Anthony, Anthony Tolentino, model, athlete, and Business Management major. Great to meet you all. And you Ms..?"
 
+    show Aurora Happy at Move(right_right, right, 1.0), centerAnchor
     Aurora "Aurora... Aurora Mirasol, Business Management as well..."
 
+    show Anthony at Move(center, center_right, 1.0), centerAnchor
+    show Celestia at Move(left_left, left, 1.0), centerAnchor 
+    show Luis Sad at Move(left_right, left_left, 1.0), centerAnchor behind Celestia
     voice "voice/A_1_2.mp3"
     Anthony "Oho! Great to hear, you don't have to worry, I don't bite, but how about missy over here?"
 
+    show Celestia at Move(left, left_right, 1.0), centerAnchor
     voice "voice/C_1_4.mp3"
     Celestia "Celestia Belmonte, heir to the Belmontes, and here is my fiance Luis Labrador. Both Business Management as well... If you don't mind, could you keep your voice down, we would be disturbing those in the adjacent rooms."
 
+    show Anthony Neutral at Move(center_right, right_left, 1.0), centerAnchor
+    show Aurora Confused at Move(right, right_right, 1.0), centerAnchor
     voice "voice/A_1_3.mp3"
     Anthony "Oh! Sorry, I'll be mindful of my voice, but how about Sir Luis' introduction?"
 
+    show Luis Neutral at Move(left_left, left_right, 1.0), centerAnchor
+    show Celestia at Move(left_right, left_left, 1.0), centerAnchor
     voice "voice/L_1_6.mp3"
     Luis "Hello, yes, as my dear Celestia mentioned, I am Luis Labrador, heir to the Labrador family and, perhaps, betrothed to my dear Celestia."
 
+    show Anthony at Move(right_left, center_right, 1.0), centerAnchor
+    show Aurora at Move(right_right, right, 1.0), centerAnchor
     voice "voice/A_1_4.mp3"
     Anthony "And that leaves mister quiet over here..."
 
+    show Rafael at Move(far_left, center_left, 2.0), centerAnchor
+    show Luis at Move(left_right, left_left, 1.0), centerAnchor
+    show Celestia at Move(left_left, far_left, 1.0), centerAnchor 
     voice "voice/R_1_1.mp3"
     Rafael "Oh! yes. Business major, Rafael Flores. Nice to meet you. Oh and.. Aurora... nice to see you after all this time..."
 
+    show Aurora Happy at Move(right, center_right, 1.0), centerAnchor
+    show Anthony at Move(center_right, right, 1.0), centerAnchor
     Aurora "Rafael! Long time no see..."
 
+    show Anthony Happy at Move(right, right_right, 1.0), centerAnchor
     voice "voice/A_1_5.mp3"
     Anthony "Oh! You're Rafael Flores! The one who got the top marks in this year's entrance exam! You're a legend among us second years, getting perfect marks in that notoriously difficult exam."
 
+    show Rafael Sad at Move(center_left, left_right, 1.0), centerAnchor
     voice "voice/R_1_2.mp3"
     Rafael "Ah.. Yes... I did get the highest score, but.. that's only the first step."
 
+    show Anthony at Move(right_right, right, 1.0), centerAnchor
     voice "voice/A_1_6.mp3"
     Anthony "And my oh my, humble too! I guess that's everyone done... Oh! Uhm you..."
 
+    show Jonathan at Move(far_far_left, center_left, 3.0), centerAnchor
+    show Rafael at Move(left_right, left, 1.0), centerAnchor
     voice "voice/J_1_1.mp3"
     Jonathan "Yes, hello, Business Management major like all of you, Jonathan De Los Reyes..."
 
+    show Anthony Neutral at Move(right, right_right, 1.0), centerAnchor
     voice "voice/A_1_7.mp3"
     Anthony "Oho... uhm... yes! Jonathan! So Jonathan what..."
 
+    show Celestia at Move(far_left, center, 2.0), centerAnchor
+    show Aurora Neutral at Move(center_right, right_left, 1.0), centerAnchor
+    show Anthony at Move(right_right, far_right, 1.0), centerAnchor
+    show Luis at Move(left_left, far_left, 1.0), centerAnchor
     voice "voice/C_1_5.mp3"
     Celestia "Well, with that matter settled, let us begin the first material we will be covering, me and Luis have prepared some supporting items for everyone out of our good will. If you would like to..."
 
     scene bg studyroom
+    show Jonathan Neutral at far_far_left_pos
+    show Anthony Sad at left_left_pos
+    show Rafael Neutral at right_left_pos
+    show Luis Neutral at center_left_pos
+    show Celestia Neutral at left_pos
+    show Aurora Neutral at far_right_pos
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000")
 
     "And so our first study session continued, with Celestia leading the discussion, only being interrupted by Anthony's attempts at making the atmosphere less stiff, to then being promptly told off by her. Rafael and I ended up pairing up as we used to back in grade school"
 
+    show Rafael at Move(right_left, right, 1.0), centerAnchor
     voice "voice/R_2_1.mp3"
     Rafael "So.. Aurora, glad to see you here."
 
+    show Rafael at Move(right, right_left, 1.0), centerAnchor
+    show Aurora Happy at Move(far_right, right_right, 1.0), centerAnchor
     Aurora "Glad to see you too. Funny we ended up as study buddies again after all these years."
 
+    show Rafael Happy at Move(right_left, center_right, 1.0), centerAnchor
     voice "voice/R_2_2.mp3"
     Rafael "Haha... Well I'm glad too... y'know, I never really did get to say a proper goodbye before moving to the city. I'm glad you didn't forget about me."
 
+    show Aurora at Move(right_right, right, 1.0), centerAnchor
     Aurora "Aw, don't worry about it. And how could I forget about you..."
 
+    show Luis Happy at Move(center_left, center, 1.0), centerAnchor
     voice "voice/L_2_1.mp3"
     Luis "Oh my? Ms. Aurora, I didn't know you had a childhood love, and what a genius he is..."
 
+    show Aurora at Move(right, right_right, 1.0), centerAnchor
     Aurora "No. Haha! Erm... It's not like that Luis."
 
+    show Luis Neutral at Move(center, center_left, 1.0), centerAnchor behind Rafael
+    show Rafael Neutral at Move(center_right, center, 1.0), centerAnchor
     voice "voice/R_2_3.mp3"
     Rafael "Yes Luis, it's not like that. Me and Aurora just have some shared history is all."
 
+    show Luis Happy at Move(center_left, center, 1.0), centerAnchor
+    show Rafael at Move(center, center_right, 1.0), centerAnchor behind Luis
     voice "voice/L_2_2.mp3"
     Luis "Oh really? 'Just' some shared history? Well that's a good thing then. If I were you Rafael, and I had such a charming and earnest childhood love, I would never let her go. She would be mine and only mine."
 
+    show Luis at Move(center, right, 1.0), centerAnchor
+    show Rafael Sad behind Luis
+    show Aurora Confused
     voice "voice/L_2_3.mp3"
     Luis "And you Ms. Aurora... What a charming and earnest person you are. I feel as though, I can depend on you should I ever need help. Would you like to maybe..."
 
+    show Celestia Mad at Move(left, right, 1.0), centerAnchor
+    show Luis Sad at Move(right, center_right, 1.0), centerAnchor behind Celestia
+    show Rafael at Move(center_right, center_left, 1.0), centerAnchor
     ## Maybe an SFX
     "Smack!"
 
+    show Aurora Sad at Move(right_right, far_right, 1.0), centerAnchor
     "A sharp pain hits my left cheek as Celestia steps between me and Luis."
 
+    show Celestia at Move(right, right_left, 1.0), centerAnchor
     voice "voice/C_2_1.mp3"
     Celestia "Stop it! While I'm here dealing with this buffoon of an athlete, you two are... Ms. Aurora, Luis... I won't stop you two from... I'll be leaving..."
 
+    show Celestia Sad at Move(right_left, offscreen_right, 2.0), centerAnchor
+    show Aurora at Move(far_right, right, 1.0), centerAnchor
+    show Rafael at Move (center_left, center, 1.0), centerAnchor
+    pause 2.0
+
+    show Luis at Move(center_right, offscreen_right, 2.0), centerAnchor
     "And so Celestia storms off out of the study room into the library. Luis, promptly leaves after her"
 
+    show Anthony Sad at Move(left_left, center_right, 1.0), centerAnchor
+    show Rafael behind Anthony
     voice "voice/A_2_1.mp3"
     Anthony "Well... That happened... Aurora! You're cheek... We have to..."
 
+    show Anthony at Move(center_right, right_left, 1.0), centerAnchor
+    show Rafael Mad 
     "Anthony's face approaches a breath's distance away from mine as he holds my cheek with concern."
 
+    show Aurora Confused at Move(right, right_right, 1.0), centerAnchor
     Aurora "Oh no, no, it doesn't hurt, but I.. I didn't mean to..."
 
+    show Rafael at Move(center, right, 1.0), centerAnchor
+    show Anthony at Move(right_left, center_right, 1.0), centerAnchor behind Rafael
+    show Aurora behind Rafael
     voice "voice/R_2_4.mp3"
     Rafael "Don't worry about it Aurora."
 
     "Rafael steps between Anthony and me, as if protecting me from whatever Anthony might say"
 
+    show Rafael at Move(right, right_left, 1.0), centerAnchor
     voice "voice/R_2_5.mp3"
     Rafael "Anthony, this isn't the time to try and make moves on Aurora."
 
+    show Anthony at Move(center_right, center, 1.0), centerAnchor
     voice "voice/A_2_2.mp3"
     Anthony "Oh, no I mean... Ok, I guess, we should maybe talk to those two first. Two of us can go after them. How about, me and Jonathan go and Aurora you can stay here..."
 

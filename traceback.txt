@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 92, in script
-    show Aurora Sad at Move(center, center_right, 2)
-TypeError: object of type 'ATLTransform' has no len()
+  File "game/script.rpy", line 202, in script
+    $ config._auto_forward_time = 11.0
+  File "game/script.rpy", line 202, in <module>
+    $ config._auto_forward_time = 11.0
+Exception: config._auto_forward_time is not a known configuration variable.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 92, in script
-    show Aurora Sad at Move(center, center_right, 2)
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
-    renpy.config.show(name,
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 489, in show
-    img = i(img) # type: ignore
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\display\motion.py", line 299, in Move
-    return Motion(Interpolate(startpos, endpos),
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\display\motion.py", line 206, in __init__
-    if len(start) != len(end):
-TypeError: object of type 'ATLTransform' has no len()
+  File "game/script.rpy", line 202, in script
+    $ config._auto_forward_time = 11.0
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 202, in <module>
+    $ config._auto_forward_time = 11.0
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\defaultstore.py", line 101, in __setattr__
+    raise Exception('config.%s is not a known configuration variable.' % (name))
+Exception: config._auto_forward_time is not a known configuration variable.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 Study Group 1.0
-Sun Aug  3 16:33:10 2025
+Sun Aug  3 19:25:04 2025

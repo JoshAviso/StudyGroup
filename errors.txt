@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 106: end of line expected.
-    show Aurora Sad at Move((0.5,0.0), (0.4,0.0), 1.0) Position(xanchor=0.5, yanchor=0.0)
-                                                       ^
-
-File "game/script.rpy", line 109: end of line expected.
-    show Aurora at Move((0.4,0.0), (0.25,0.0), 1.0) Position(xanchor=0.5, yanchor=0.0)
-                                                    ^
-
-File "game/script.rpy", line 110: end of line expected.
-    show Luis Happy at Move(offscreen_right, right, 1.0) Position(xanchor=0.5, yanchor=0.0)
-                                                         ^
+File "game/script.rpy", line 370: end of line expected.
+    show Anthony at Move(right_left, center_right, 1.0), centerAnchor behin Rafael
+                                                                      ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Aug  3 17:02:31 2025
+Sun Aug  3 20:45:27 2025
