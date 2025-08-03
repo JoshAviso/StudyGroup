@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 9: invalid syntax
-    Character(what_color="#d0ff00" what_italic=True)
-                                    ^
+File "game/script.rpy", line 106: end of line expected.
+    show Aurora Sad at Move((0.5,0.0), (0.4,0.0), 1.0) Position(xanchor=0.5, yanchor=0.0)
+                                                       ^
+
+File "game/script.rpy", line 109: end of line expected.
+    show Aurora at Move((0.4,0.0), (0.25,0.0), 1.0) Position(xanchor=0.5, yanchor=0.0)
+                                                    ^
+
+File "game/script.rpy", line 110: end of line expected.
+    show Luis Happy at Move(offscreen_right, right, 1.0) Position(xanchor=0.5, yanchor=0.0)
+                                                         ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Jul 27 15:55:09 2025
+Sun Aug  3 17:02:31 2025
