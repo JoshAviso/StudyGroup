@@ -696,17 +696,59 @@ label route112:
 
 label route113:
     $ went_route_113 = True
+
+    show Aurora Sad at Move(right_3, two_right, quick_step), centerAnchor
     Aurora "You can still make things right with Celestia, let's look for her."
 
+    show Luis at Move(four_left, left_3, one_step), centerAnchor
     voice "voice/L_2_113_1.mp3"
     Luis "Do you really think so?"
 
+    show Aurora Happy at Move(two_right, one_right, one_step), centerAnchor
     Aurora "Yes! Let's find her. With what I know now, I think you can give her the earnest apology she needs so you can both feel better."
 
+    show Luis Neutral at Move(left_3, two_left, one_step), centerAnchor
     voice "voice/L_2_113_2.mp3"
     Luis "Ok, if you're sure. I'll do anything for my dear Celestia. And if it means opening my heart to her now, it will have to do."
 
-    "And so me and Luis set off to find Celestia. We found her curled up in a hidden away aisle. Luis surprises her with a comforting hug and they have a heartfelt chat. I suspect they would appreciate the privacy, so I decide to leave them and return to the room alone, Jonathan had already gotten back. A few moments pass and with puffy eyes which looked like they had been thoroughly cried out, Celestia and Luis return to the room arm-in-arm."
+    show Luis at Move(two_left, offscreen_right_6, eight_step), centerAnchor
+    pause four_step
+    show Aurora at Move(one_right, offscreen_right_6, six_step), centerAnchor
+    pause six_step
+    show Celestia Sad at right_3_pos
+    show Luis Sad at Move(offscreen_left_6, center, six_step), centerAnchor
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
+    pause two_step
+    show Aurora Sad at Move(offscreen_left_6, left_3, four_step), centerAnchor
+    "And so me and Luis set off to find Celestia. We found her curled up in a hidden away aisle." 
+    
+    show Luis at Move(center, two_right, slow_step), centerAnchor behind Celestia
+    pause slow_step
+    show Aurora Happy
+    show Celestia Happy
+    "Luis surprises her with a comforting hug and they have a heartfelt chat." 
+
+    show Aurora Neutral at Move(left_3, offscreen_left_6, four_step), centerAnchor
+    show Celestia Sad
+    "I suspect they would appreciate the privacy, so I decide to leave them and return to the room alone." 
+    
+    scene bg studyroom
+    show Jonathan Sad at center_pos
+    show Anthony Sad at two_left_pos
+    show Rafael Sad at four_left_pos
+    show Aurora Neutral at Move(offscreen_right_6, right_3, four_step), centerAnchor
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
+    "Jonathan had already gotten back." 
+
+    show Celestia Sad at Move(offscreen_right_6, two_right, six_step), centerAnchor  
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")  
+    pause one_step 
+    show Luis Sad at Move(offscreen_right_6, right_3, six_step), centerAnchor behind Celestia
+    show Rafael at Move(four_left, five_left, one_step), centerAnchor
+    show Anthony at Move(two_left, left_3, one_step), centerAnchor
+    show Jonathan at Move(center, one_left, one_step), centerAnchor
+    show Aurora at Move(right_3, center, three_step), centerAnchor
+    "A few moments pass and with puffy eyes which looked like they had been thoroughly cried out, Celestia and Luis return to the room arm-in-arm."
 
     jump scene3
 
@@ -716,23 +758,30 @@ label route12:
     Aurora "I'll look for Celestia."
 
     scene library
+    show Celestia Sad at right_3_pos
+    show Aurora Sad at Move(offscreen_left_6, left_3, four_step), centerAnchor
     with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000")
-
     "I looked throughout the library, and eventually stumbled into Celestia curled up in a random hidden aisle of bookshelves where she would be undisturbed. I approach her with caution... she is crying."
 
+    show Aurora Confused at Move(left_3, two_left, slow_step), centerAnchor
     Aurora "Celestia?... I hope I am not intruding."
 
+    show Celestia at Move(right_3, four_right, quick_step), centerAnchor
     voice "voice/C_2_12_1.mp3"
     Celestia "Oh? Aurora... Well I guess it is too late now to keep up the facade. I'm sorry about the cheek..."
 
     "Celestia looks at me with a dejected look, it is one of sincerity and regret but also of pain."
 
+    show Celestia at Move(four_right, right_3, one_step), centerAnchor
     voice "voice/C_2_12_2.mp3"
     Celestia "I'm sorry about all that drama. To be honest, I think I got a bit too wound up with Luis. I'm sorry about being so protective about him. To be honest, I love that man way too much, and to be honest, more than he really deserves, but he is my light and I love him for it."
 
+    show Celestia at Move(right_3, two_right, slow_step), centerAnchor
+    show Aurora Sad
     voice "voice/C_2_12_3.mp3"
     Celestia "When each of our families started giving the two of us more responsibilities, I took on the brunt of the serious tasks out of obligation, and Luis, well... At first I found it charming that he was as carefree as ever. But eventually, I got frustrated at him, most especially with his playboy act. I know it's just an act but it hurts y'know."
 
+    show Celestia at Move(two_right, right_3, slow_step), centerAnchor
     voice "voice/C_2_12_4.mp3"
     Celestia "And to be honest, I wish I could just escape this responsibility I found myself in. Carrying the responsibility of essentially both our families... not to mention being afraid of losing Luis... I just wish... he could just... be on my side..."
 
@@ -744,72 +793,145 @@ label route12:
 
 label route121:
     $ went_route_121 = True
+    show Aurora Happy at Move(two_left, one_left, quick_step), centerAnchor
     Aurora "Well, it's not too late to tell him that. That you need him. You can let down your refined facade and tell him honestly how you're hurting"
 
+    show Celestia at Move(right_3, four_right, slow_step), centerAnchor
     voice "voice/C_2_121_1.mp3"
     Celestia "But... but... but... I guess... I can..."
 
+    show Celestia Neutral at Move(four_right, right_3, slow_step), centerAnchor
     "Celestia takes a deep breath and her face changes to one of conviction"
 
+    show Celestia Happy at Move(right_3, two_right, quick_step), centerAnchor
     voice "voice/C_2_121_2.mp3"
     Celestia "You're right Aurora, it's not too late... I've been so preoccupied with putting up looks, making us look like a power couple, that I didn't consider starting with being honest with Luis. Let's go, I know just where that buffoon is sulking."
 
-    "So Celestia promptly leads me to a secluded window seat, with determination behind her puffy red eyes. And like on cue, she finds Luis, dejected, and elegantly grasps his hands. They seem to start a heartfelt conversation, one I decide not to intrude on."
+    show Celestia at Move(two_right, offscreen_right_6, four_step), centerAnchor
+    pause quick_step
+    show Aurora at Move(one_left, offscreen_right_6, four_step), centerAnchor
+    "So Celestia promptly leads me to a secluded window seat, with determination behind her puffy red eyes." 
+    
+    show Luis Sad at right_3_pos behind Celestia
+    show Celestia Sad at Move(offscreen_left_6, two_right, eight_step), centerAnchor
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.0, color="#000000")
+    pause two_step
+    show Aurora Sad at Move(offscreen_left_6, left_3, four_step), centerAnchor
+    pause six_step
+    show Aurora Happy
+    pause quick_step
+    show Luis Happy
+    show Celestia Happy
+    "And like on cue, she finds Luis, dejected, and elegantly grasps his hands. They seem to start a heartfelt conversation, one I decide not to intrude on."
 
-    scene studyroom
+    show Aurora at Move(left_3, offscreen_left_6, four_step), centerAnchor
+    pause four_step
+    scene bg studyroom
+    show Jonathan Sad at center_pos
+    show Anthony Sad at two_left_pos
+    show Rafael Sad at four_left_pos
+    show Aurora Neutral at Move(offscreen_right_6, right_3, four_step), centerAnchor
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
 
-    "I return to the study room, where the rest remain quietly seated, perhaps unsure about the turnout of events. But I, I'm confident those two will be able to make up. And as a few moments pass, the power couple walks in, with puffy red eyes and arms linked tightly."
+    "I return to the study room, where the rest remain quietly seated, perhaps unsure about the turnout of events. But I, I'm confident those two will be able to make up." 
+    
+    show Celestia Sad at Move(offscreen_right_6, two_right, six_step), centerAnchor  
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")  
+    pause one_step 
+    show Luis Sad at Move(offscreen_right_6, right_3, six_step), centerAnchor behind Celestia
+    show Rafael at Move(four_left, five_left, one_step), centerAnchor
+    show Anthony at Move(two_left, left_3, one_step), centerAnchor
+    show Jonathan at Move(center, one_left, one_step), centerAnchor
+    show Aurora at Move(right_3, center, three_step), centerAnchor
+    "And as a few moments pass, the power couple walks in, with puffy red eyes and arms linked tightly."
 
     jump scene3
 
 label route122:
+    show Aurora Confused at Move(two_left, one_left, quick_step), centerAnchor
     Aurora "He failed you Celestia, I think you should choose yourself for once."
 
+    show Celestia at Move(right_3, four_right, slow_step), centerAnchor
     voice "voice/C_2_122_1.mp3"
     Celestia "Sigh... I guess you're right. I've spent years trying to get him to notice me, to realize how much I care, and he never fails to tire me out... I'll give it a thought Aurora, I care for him oh so deeply, but he wont look my way..."
 
-    "We sit there in silence for a moment. Celestia looks mournful but determined, it appears she really is thinking through what I said. After a moment, she stands up and we walk back to the room in silence. The weight is heavy in the air as we make it back to the room with Luis nowhere in sight."
+    "We sit there in silence for a moment. Celestia looks mournful but determined, it appears she really is thinking through what I said." 
+    
+    show Celestia at Move(four_right, left_3, six_step), centerAnchor
+    pause six_step
+    show Celestia at Move(left_3, offscreen_left_6, four_step), centerAnchor
+    show Aurora at Move(one_left, offscreen_left_6, six_step), centerAnchor
+    "After a moment, she stands up and we walk back to the room in silence." 
+    
+    scene bg studyroom
+    show Jonathan Sad at two_left_pos behind Aurora
+    show Anthony Sad at four_left_pos behind Aurora
+    show Rafael Sad at far_five_left_pos behind Aurora
+    show Celestia Sad at Move(offscreen_right_6, center, six_step), centerAnchor
+    pause two_step
+    show Aurora Neutral at Move(offscreen_right_6, one_right, four_step), centerAnchor
+    "The weight is heavy in the air as we make it back to the room with Luis nowhere in sight."
 
-    scene studyroom
-
+    show Luis Happy at Move(offscreen_right_6, four_right, four_step), centerAnchor
     "Everyone sits in the silence for what feels like ages, until eventually Luis walks into the room with a bright confidence on his face, obviously fake, his eyes red much like Celestia's from crying."
 
+    show Celestia at Move(center, one_left, slow_step), centerAnchor
     voice "voice/C_2_122_2.mp3"
     Celestia "Luis... drop the act..."
 
+    show Luis Neutral at Move(four_right, right_3, slow_step), centerAnchor
     voice "voice/L_2_122_1.mp3"
     Luis "What act do you mean love?"
 
+    show Aurora Confused
     "Unlike Celestia, whose face is filled with a gentle concern towards Luis, I can only look at him in disappointment and disapproval. I speak with a coldness I didn't know I had"
 
+    show Aurora Sad at Move(one_right, two_right, quick_step), centerAnchor
+    show Luis Sad at Move(right_3, four_right, one_step), centerAnchor
     Aurora "Luis... that's enough."
 
+    show Aurora at Move(two_right, one_right, one_step), centerAnchor
     "A silence blankets the room once more. Moments pass, and Luis' voice breaks it..."
 
+    show Luis at Move(four_right, right_3, slow_step), centerAnchor
     voice "voice/L_2_122_2.mp3"
     Luis "Sigh... Ok, I guess I wont pretend anymore... I screwed up and I..."
 
+    show Aurora at Move(one_right, two_right, quick_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
     Aurora "No... Luis... You failed her, you..."
 
+    show Celestia at Move(one_left, center, quick_step), centerAnchor
+    pause quick_step
+    show Aurora Confused at Move(two_right, one_right, slow_step), centerAnchor behind Celestia
     voice "voice/C_2_122_3.mp3"
     Celestia "No, it... it's alright Aurora..."
 
+    show Luis at Move(four_right, right_3, one_step), centerAnchor
     voice "voice/L_2_122_3.mp3"
     Luis "I'm deeply sorry Celestia... I... I... was a buffoon to play with your feelings like that. I... I know I do not deserve your forgiveness and am ready for whatever I must do to earn back your trust and I..."
 
+    show Celestia at Move(center, one_right, slow_step), centerAnchor
+    show Aurora at Move(one_right, center, slow_step), centerAnchor
     voice "voice/C_2_122_4.mp3"
     Celestia "No, it's alright Luis. I understand. Aurora made me realize that I cannot let myself be so easily hurt..."
 
+    show Celestia at Move(one_right, two_right, slow_step), centerAnchor behind Luis
     voice "voice/C_2_122_5.mp3"
     Celestia "And so... I have to apologize... I... I think... I... I have to call off our engagement... for both our sakes..."
 
+    show Aurora Sad at Move(center, one_left, slow_step), centerAnchor
     "And with that Luis breaks down in tears. A broken face I didn't expect to see. Celestia too, her face holding back tears which couldn't help but flow from her eyes, now hugging the sobbing Luis. I do not know why Celestia hugged the man who failed her... But it is not for me to tell her what to feel."
 
+    show Aurora with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
     "A lifetime seemed to pass as the two cried, with the room in silence, everyone unsure of what to do. Eventually, the group disbanded for the day."
 
-    "Afterwards, I saw little of Luis, he no longer showed up at our study sessions. Celestia was visibly heartbroken for quite some time. But I think it was for the best. It was me and Anthony who would comfort her during this time. At some point, the two of them would spend more time together."
-
+    show black with dissolve
+    "Afterwards, I saw little of Luis, he no longer showed up at our study sessions." 
+    "Celestia was visibly heartbroken for quite some time. But I think it was for the best." 
+    "It was me and Anthony who would comfort her during this time. At some point, the two of them would spend more time together."
     "I couldn't help but think something went wrong then. I couldn't place it exactly. Celestia did regain her happiness, thanks to Anthony for the most part. But, something felt missing for quite some time..."
+    show black with dissolve
 
     return
 
@@ -1116,17 +1238,21 @@ label route33:
 
 label scene3:
 
-    scene studyroom
-
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
     voice "voice/L_3_1.mp3"
     Luis "So... yes, hello everyone. Uhm... Me and Celestia. We... patched things up. Apologies for that uhm... fiasco."
 
+    show Celestia at Move(two_right, right_3, one_step), centerAnchor
     voice "voice/C_3_1.mp3"
     Celestia "Yes... We... Uh... We let the emotions we had pent up for years build up... And it kind of exploded. Our sincerest apologies."
 
+    show Luis at Move(four_right, right_3, one_step), centerAnchor
+    show Celestia at Move(right_3, four_right, one_step), centerAnchor
     voice "voice/L_3_2.mp3"
     Luis "And... Aurora. I must apologize first and foremost for playing with your emotions. I did not mean to play with your heart."
 
+    show Celestia at Move(four_right, right_3, one_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
     voice "voice/C_3_2.mp3"
     Celestia "And I... I am really truly sorry for slapping you Aurora. I lost my composure and lashed out."
 
@@ -1150,17 +1276,28 @@ label scene3:
         jump end33
 
 label end113:
-    "I look to Luis glad I was able to be a bridge between the two of them"
+    "I look to Luis, glad I was able to be a bridge between the two of them"
 
+    show Aurora at Move(center, one_right, one_step), centerAnchor
+    show Rafael Happy
+    show Anthony Happy
+    show Jonathan Happy
     Aurora "Luis, Celestia, I accept your apologies."
 
+    show Luis Happy at Move(four_right, right_3, one_step), centerAnchor
+    show Celestia Neutral at Move(right_3, four_right, one_step), centerAnchor
     voice "voice/L_3_113_1.mp3"
     Luis "I hope we can all be good companions from this point onwards. Aurora, you were truly a good confidant and friend to me."
 
+    show Celestia Happy at Move(four_right, right_3, one_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
     voice "voice/C_3_113_1.mp3"
     Celestia "Yes Aurora, thank you. I... again... am truly sorry."
 
+    show Aurora at Move(one_right, two_right, quick_step), centerAnchor behind Celestia
     "And without thinking, I give Celestia a tight hug as if acknowledging her pain. Luis is looking over our shoulders glad. I hope this can be the start of a truly powerful friendship with everyone. Looks like I did achieve my goal of making friends afterall, despite the chaos that is..."
+
+    show black with dissolve
 
     return
 

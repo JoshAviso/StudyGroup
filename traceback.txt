@@ -1,17 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 640, in script
-    show Luis at Move(left_3, left_one, one_step), centerAnchor
-  File "game/script.rpy", line 640, in <module>
-    show Luis at Move(left_3, left_one, one_step), centerAnchor
-NameError: name 'left_one' is not defined
+  File "game/script.rpy", line 896, in script
+    show Luis at Move(right_four, right_3, slow_step), centerAnchor
+  File "game/script.rpy", line 896, in <module>
+    show Luis at Move(right_four, right_3, slow_step), centerAnchor
+NameError: name 'right_four' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 640, in script
-    show Luis at Move(left_3, left_one, one_step), centerAnchor
+  File "game/script.rpy", line 896, in script
+    show Luis at Move(right_four, right_3, slow_step), centerAnchor
   File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
@@ -22,11 +22,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 640, in <module>
-    show Luis at Move(left_3, left_one, one_step), centerAnchor
-NameError: name 'left_one' is not defined
+  File "game/script.rpy", line 896, in <module>
+    show Luis at Move(right_four, right_3, slow_step), centerAnchor
+NameError: name 'right_four' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 Study Group 1.0
-Wed Aug  6 16:48:45 2025
+Wed Aug  6 22:38:22 2025

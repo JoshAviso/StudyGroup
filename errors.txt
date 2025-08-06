@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 370: end of line expected.
-    show Anthony at Move(right_left, center_right, 1.0), centerAnchor behin Rafael
-                                                                      ^
+File "game/script.rpy", line 906: end of line expected.
+    show Aurora Confused at Move(two_right, one_right, slow_step), centerAnchor behin Celestia
+                                                                                ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Sun Aug  3 20:45:27 2025
+Wed Aug  6 22:41:22 2025
