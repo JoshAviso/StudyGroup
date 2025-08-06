@@ -620,44 +620,77 @@ label route111:
     return
 
 label route112:
+    show Aurora Happy at Move(right_3, two_right, slow_step), centerAnchor
     Aurora "I'll support you Luis, now that I know the real you. Not the playboy you, but the thoughtful you who cares little for the formalities despite your status."
 
+    show Luis Neutral at Move(four_left, left_3, slow_step), centerAnchor
     voice "voice/L_2_112_1.mp3"
     Luis "Thanks Aurora. That makes me really happy, to know that, despite all that's happened, and me being admittedly rough around the edges, you'll back me."
 
+    show Aurora at Move(two_right, one_right, slow_step), centerAnchor
     Aurora "Of course Luis..."
 
+    show Luis Happy at Move(left_3, two_left, slow_step), centerAnchor
     "Luis' face turns warm, a genuine warmth I had never seen on his face before. You can tell, this was no act of his, he is genuinely grateful to you... And you feel likewise grateful to him..."
 
+    show Luis at Move(two_left, left_3, one_step), centerAnchor
+    pause one_step
+    show Aurora at Move(one_right, center, one_step), centerAnchor
+    pause quick_step
+    show Luis at Move(left_3, one_left, one_step), centerAnchor
     voice "voice/L_2_112_2.mp3"
     Luis "Aurora! Look, can you see those clouds? They look beautiful, beautiful like you. Haha! Sorry, only teasing. Seriously though, I'm grateful to have you."
 
-    "As the two of us stared off into the clouds for only a few moments which felt like an eternity together, we decided that it was about time to go back to the room. Celestia, with puffy eyes, seems to have been comforted by the rest of the group..."
+    "As the two of us stared off into the clouds for only a few moments which felt like an eternity together. We decided that it was about time to go back to the room." 
 
-    scene studyroom
-
+    scene bg studyroom
+    show Jonathan Neutral at far_five_left_pos
+    show Rafael Sad at five_left_pos
+    show Anthony Mad at left_3_pos
+    show Celestia Sad at two_left_pos
+    show Luis Sad at Move(offscreen_right_6, two_right, six_step), centerAnchor
+    with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000")
+    pause quick_step
+    show Aurora Sad at Move(offscreen_right_6, four_right, six_step), centerAnchor behind Luis
+    "Celestia, with puffy eyes, seems to have been comforted by the rest of the group..."
+    
+    show Luis at Move(two_right, one_right, slow_step), centerAnchor
     voice "voice/L_2_112_3.mp3"
     Luis "Celestia... I'm sorry..."
 
+    show Celestia at Move(two_left, one_left, slow_step), centerAnchor
     voice "voice/C_2_112_1.mp3"
     Celestia "Luis... I... I... I'm sorry... I..."
 
+    show Luis at Move(one_right, center, slow_step), centerAnchor behind Celestia
     voice "voice/L_2_112_4.mp3"
     Luis "It's ok Celestia... I'm the one who should apologize. I played with your heart by pretending to like Aurora and not looking at you for who you are. And because of that... I hurt you... I am deeply sorry for what I've done and I cannot make it up to you... I am sorry."
 
+    show Anthony Mad at Move(left_3, center, one_step), centerAnchor
+    show Celestia behind Anthony
+    show Luis behind Anthony
+    pause quick_step
+    show Luis at Move(center, two_right, quick_step), centerAnchor
     voice "voice/A_2_112_1.mp3"
     Anthony "Yes Luis, you should be sorry. You made your fiance cry. Cry!? You should be ashamed of yourself as a man, no... as a person! You should..."
 
+    show Celestia at Move(one_left, center, one_step), centerAnchor
+    show Anthony at Move(center, two_left, slow_step), centerAnchor behind Celestia
     voice "voice/C_2_112_2.mp3"
     Celestia "Anthony... that is enough... Thanks to you, I... I... get it now. Luis... I'm sorry. I'm sorry I was so stubborn and didn't let myself see you for who you are, for what your heart was saying all this time. I think... it's best we call off the engagement..."
 
+    show Luis at Move(two_right, right_3, one_step), centerAnchor behind Aurora
     "With that, Luis' face darkens, the woman who he cared for called their engagement off..."
 
-    "A silence filled the room, a mournful silence. We decided to end today's session. We've gone through a lot already. As days passed, Luis would come to me, his heart broken, he was the one to tell me that the cancellation of their engagement was final."
+    "A silence filled the room, a mournful silence. We decided to end today's session. We've gone through a lot already." 
+    
+    show black with dissolve
+    "As days passed, Luis would come to me, his heart broken, he was the one to tell me that the cancellation of their engagement was final."
 
-    "As days turned to weeks, the study group disbanded. At first it was Celestia and Anthony. I think Celestia couldn't bear the heartbreak of seeing Luis again, and Anthony was supporting her. Then it was Rafael and Jonathan, they silently left too, I think, to join a different study group, perhaps with the extra baggage we carried they opted to take a step back."
-
+    "As days turned to weeks, the study group disbanded. At first it was Celestia and Anthony. I think Celestia couldn't bear the heartbreak of seeing Luis again, and Anthony was supporting her." 
+    "Then it was Rafael and Jonathan, they silently left too, I think, to join a different study group, perhaps with the extra baggage we carried they opted to take a step back."
     "As for me, I stayed behind to support Luis, like I promised that beautifully cloudy day..."
+    show black with dissolve
 
     return
 
