@@ -1,28 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 202, in script
-    $ config._auto_forward_time = 11.0
-  File "game/script.rpy", line 202, in <module>
-    $ config._auto_forward_time = 11.0
-Exception: config._auto_forward_time is not a known configuration variable.
+  File "game/script.rpy", line 557, in script
+    show Aurora at Move(one_right, offscreen_left_6, five_step), centerAnchor
+  File "game/script.rpy", line 557, in <module>
+    show Aurora at Move(one_right, offscreen_left_6, five_step), centerAnchor
+NameError: name 'five_step' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 202, in script
-    $ config._auto_forward_time = 11.0
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 202, in <module>
-    $ config._auto_forward_time = 11.0
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\defaultstore.py", line 101, in __setattr__
-    raise Exception('config.%s is not a known configuration variable.' % (name))
-Exception: config._auto_forward_time is not a known configuration variable.
+  File "game/script.rpy", line 557, in script
+    show Aurora at Move(one_right, offscreen_left_6, five_step), centerAnchor
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 557, in <module>
+    show Aurora at Move(one_right, offscreen_left_6, five_step), centerAnchor
+NameError: name 'five_step' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 Study Group 1.0
-Sun Aug  3 19:25:04 2025
+Wed Aug  6 16:25:24 2025
