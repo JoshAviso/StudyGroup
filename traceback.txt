@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 896, in script
-    show Luis at Move(right_four, right_3, slow_step), centerAnchor
-  File "game/script.rpy", line 896, in <module>
-    show Luis at Move(right_four, right_3, slow_step), centerAnchor
-NameError: name 'right_four' is not defined
+  File "game/script.rpy", line 993, in script
+    show Anthony Sad at two_left
+TypeError: 'tuple' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 896, in script
-    show Luis at Move(right_four, right_3, slow_step), centerAnchor
+  File "game/script.rpy", line 993, in script
+    show Anthony Sad at two_left
   File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1124, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1083, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 896, in <module>
-    show Luis at Move(right_four, right_3, slow_step), centerAnchor
-NameError: name 'right_four' is not defined
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "D:\Josh\ProgramFiles\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 489, in show
+    img = i(img) # type: ignore
+TypeError: 'tuple' object is not callable
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.7.25031702
 Study Group 1.0
-Wed Aug  6 22:38:22 2025
+Thu Aug  7 13:39:44 2025
