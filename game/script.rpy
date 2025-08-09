@@ -278,7 +278,7 @@ label start:
     show Rafael at Move(five_left, one_left, four_step), centerAnchor
     show Luis at Move(two_left, four_left, one_step), centerAnchor
     show Celestia at Move(four_left, five_left, one_step), centerAnchor 
-    voice "voice/R_1_1.mp3"
+    voice "voice/R_1_1.wav"
     Rafael "Oh! yes. Business major, Rafael Flores. Nice to meet you. Oh and.. Aurora... nice to see you after all this time..."
 
     show Aurora Happy at Move(right_3, one_right, one_step), centerAnchor
@@ -290,7 +290,7 @@ label start:
     Anthony "Oh! You're Rafael Flores! The one who got the top marks in this year's entrance exam! You're a legend among us second years, getting perfect marks in that notoriously difficult exam."
 
     show Rafael Sad at Move(one_left, two_left, one_step), centerAnchor
-    voice "voice/R_1_2.mp3"
+    voice "voice/R_1_2.wav"
     Rafael "Ah.. Yes... I did get the highest score, but.. that's only the first step."
 
     show Anthony at Move(four_right, right_3, one_step), centerAnchor
@@ -326,7 +326,7 @@ label scene2:
     "And so our first study session continued, with Celestia leading the discussion, only being interrupted by Anthony's attempts at making the atmosphere less stiff, to then being promptly told off by her. Rafael and I ended up pairing up as we used to back in grade school"
 
     show Rafael at Move(two_right, right_3, one_step), centerAnchor
-    voice "voice/R_2_1.mp3"
+    voice "voice/R_2_1.wav"
     Rafael "So.. Aurora, glad to see you here."
 
     show Rafael at Move(right_3, two_right, one_step), centerAnchor
@@ -334,7 +334,7 @@ label scene2:
     Aurora "Glad to see you too. Funny we ended up as study buddies again after all these years."
 
     show Rafael Happy at Move(two_right, one_right, one_step), centerAnchor
-    voice "voice/R_2_2.mp3"
+    voice "voice/R_2_2.wav"
     Rafael "Haha... Well I'm glad too... y'know, I never really did get to say a proper goodbye before moving to the city. I'm glad you didn't forget about me."
 
     show Aurora at Move(four_right, right_3, one_step), centerAnchor
@@ -349,7 +349,7 @@ label scene2:
 
     show Luis Neutral at Move(center, one_left, one_step), centerAnchor behind Rafael
     show Rafael Neutral at Move(one_right, center, one_step), centerAnchor
-    voice "voice/R_2_3.mp3"
+    voice "voice/R_2_3.wav"
     Rafael "Yes Luis, it's not like that. Me and Aurora just have some shared history is all."
 
     show Luis Happy at Move(one_left, center, one_step), centerAnchor
@@ -405,13 +405,13 @@ label scene2:
     show Rafael at Move(center, right_3, one_step), centerAnchor
     show Anthony at Move(two_right, one_right, slow_step), centerAnchor behind Rafael
     show Aurora behind Rafael
-    voice "voice/R_2_4.mp3"
+    voice "voice/R_2_4.wav"
     Rafael "Don't worry about it Aurora."
 
     "Rafael steps between Anthony and me, as if protecting me from whatever Anthony might say"
 
     show Rafael at Move(right_3, two_right, one_step), centerAnchor
-    voice "voice/R_2_5.mp3"
+    voice "voice/R_2_5.wav"
     Rafael "Anthony, this isn't the time to try and make moves on Aurora."
 
     show Anthony at Move(one_right, center, one_step), centerAnchor
@@ -440,7 +440,7 @@ label route1:
     Aurora "Yes... I'm sure. It was my fault that they got into this situation."
 
     show Rafael at Move(one_right, two_right, one_step), centerAnchor
-    voice "voice/R_2_1_1.mp3"
+    voice "voice/R_2_1_1.wav"
     Rafael "Aurora. You don't have to. It's something that's just between them."
 
     show Aurora Neutral at Move(four_right, right_3, one_step), centerAnchor behind Rafael
@@ -448,7 +448,7 @@ label route1:
 
     show Rafael Neutral at Move(two_right, one_right, one_step), centerAnchor
     show Jonathan at Move(five_left, four_left, one_step), centerAnchor
-    voice "voice/R_2_1_2.mp3"
+    voice "voice/R_2_1_2.wav"
     Rafael "Sigh... Ok fine, if you're sure about it. Jonathan, I think you should go."
 
     show Anthony Neutral at Move(one_left, two_left, one_step), centerAnchor
@@ -1099,7 +1099,7 @@ label route2:
     Anthony "Uh? Me? Uhm... ok why?"
 
     show Rafael at Move(two_right, right_3, slow_step), centerAnchor
-    voice "voice/R_2_2_1.mp3"
+    voice "voice/R_2_2_1.wav"
     Rafael "Actually, I agree, I think you're the best bet if the two of them make it back before me and Jonathan can find them."
 
     show Anthony at Move(one_left, two_left, slow_step), centerAnchor
@@ -1107,7 +1107,7 @@ label route2:
     Anthony "Well, uhm... Sure, I guess, I'll just sit here with Aurora. Do your best you two."
 
     show Rafael Mad at Move(right_3, two_right, quick_step), centerAnchor
-    voice "voice/R_2_2_2.mp3"
+    voice "voice/R_2_2_2.wav"
     Rafael "But don't try to do anything funny with Aurora ok?"
 
     call Silence
@@ -1335,7 +1335,7 @@ label route23:
     show Luis at Move(two_right, right_3, quick_step), centerAnchor
     pause quick_step
     show Aurora at Move(four_right, five_right, slow_step), centerAnchor
-    voice "voice/R_2_23_1.mp3"
+    voice "voice/R_2_23_1.wav"
     Rafael "Can you guys stop... Anthony! Celestia! Luis! Can you please just..."
 
     call Silence
@@ -1361,14 +1361,14 @@ label route3:
     "Promptly, Anthony drags Jonathan along as they look for Luis and Celestia. Leaving me and Rafael in the room with an awkward silence, one that I didn't expect sitting here with my grade school best friend. Rafael's voice pierces the silence."
 
     show Rafael at Move(two_right, one_right, slow_step), centerAnchor
-    voice "voice/R_2_3_1.mp3"
+    voice "voice/R_2_3_1.wav"
     Rafael "Hey, uhm. Aurora. I'm sorry, I think I got a bit worked up earlier."
 
     show Aurora Confused at Move(five_right, four_right, slow_step), centerAnchor
     Aurora "I'm sorry? You? Got worked up? The coolest and most calm guy I know? I didn't even notice."
 
     show Rafael Neutral at Move(one_right, center, slow_step), centerAnchor
-    voice "voice/R_2_3_2.mp3"
+    voice "voice/R_2_3_2.wav"
     Rafael "Yes Aurora, I think I did. To be honest, I.. I think I always get worked up... especially when it comes to you."
 
     show Aurora at Move(four_right, right_3, one_step), centerAnchor
@@ -1376,14 +1376,14 @@ label route3:
 
     call TenderMusic
     show Rafael at Move(center, one_left, slow_step), centerAnchor
-    voice "voice/R_2_3_3.mp3"
+    voice "voice/R_2_3_3.wav"
     Rafael "Well... To be honest Aurora, you're the only person I think I can feel comfortable with, ever since we used to study together. I'm always supposed to keep up this unaffected mask. Be it studies or socializing, people know me as the cool guy but I don't know how to get out."
 
     show Aurora Happy at Move(right_3, two_right, quick_step), centerAnchor
     Aurora "Well, you are the cool guy. Remember all those girls who fell for you back in high school? We couldn't hang out much once that started happening. To be honest I missed our study chats. Haha!"
 
     show Rafael at Move(one_left, two_left, slow_step), centerAnchor
-    voice "voice/R_2_3_4.mp3"
+    voice "voice/R_2_3_4.wav"
     Rafael "Well.. I'm glad you think that of me, Aurora, but.. I'm more than just the cool guy.. nor.. the smart guy. And no, I don't care about what those girls in high school thought."
 
     show Aurora Confused at Move(two_right, right_3, slow_step), centerAnchor
@@ -1391,29 +1391,29 @@ label route3:
 
     show Rafael at Move(two_left, one_left, slow_step), centerAnchor
     show Aurora Sad
-    voice "voice/R_2_3_5.mp3"
+    voice "voice/R_2_3_5.wav"
     Rafael "I missed our chats in grade school, our friendship even. I missed being able to connect with you, and only you."
 
     show Rafael Happy at Move(one_left, two_left, slow_step), centerAnchor
     show Aurora Neutral
-    voice "voice/R_2_3_6.mp3"
+    voice "voice/R_2_3_6.wav"
     Rafael "Remember the time we stayed up late studying for our science exam? The time you helped me out with my Filipino homework? The time I helped you with math, though you complained that you still hated math and look where you are! Now you're in business school."
 
     show Rafael at Move(two_left, one_left, slow_step), centerAnchor
     show Aurora Happy
-    voice "voice/R_2_3_7.mp3"
+    voice "voice/R_2_3_7.wav"
     Rafael "How about the time you came to visit me in the hospital when I got sprained, or the time I visited your home when you were sick. We even played so many games together in between our study sessions. Those memories... They mean the world to me."
 
     show Rafael at Move(one_left, two_left, slow_step), centerAnchor
     show Aurora Sad
-    voice "voice/R_2_3_8.mp3"
+    voice "voice/R_2_3_8.wav"
     Rafael "I never wanted to be the cool guy, Aurora, or rather... I became the cool guy for someone. And.. I hoped that someone would notice me and maybe fall for me. But, instead, it pushed her away."
 
     show Aurora Confused at Move(right_3, one_right, two_step), centerAnchor
     Aurora "Rafael?"
 
     show Rafael at Move(two_left, one_left, slow_step), centerAnchor
-    voice "voice/R_2_3_9.mp3"
+    voice "voice/R_2_3_9.wav"
     Rafael "Yes, Aurora, this facade I'm putting up, I don't want to be like this anymore. Luis and Anthony showed me that I can't just sit back and watch. I have to make a move."
 
     show Aurora at Move(one_right, two_right, quick_step), centerAnchor
@@ -1424,7 +1424,7 @@ label route3:
     "Rafael looks deeply into my eyes with a renewed conviction"
 
     show Rafael at Move(one_left, two_left, slow_step), centerAnchor
-    voice "voice/R_2_3_10.mp3"
+    voice "voice/R_2_3_10.wav"
     Rafael "Yes, Aurora, I do like someone..."
 
     show Aurora at Move(two_right, one_right, one_step), centerAnchor
@@ -1432,7 +1432,7 @@ label route3:
 
     call TenderMusic
     show Rafael Happy at Move(two_left, one_left, slow_step), centerAnchor
-    voice "voice/R_2_3_11.mp3"
+    voice "voice/R_2_3_11.wav"
     Rafael "You Aurora, I like you... I've loved you through all of our memories together."
 
     menu:
@@ -1452,15 +1452,15 @@ label route31:
     show Rafael Sad
     "Rafael's face darkens, the conviction which I had seen earlier disappears"
 
-    show Rafael at Move(one_left, two_left, slow_step), centerAnchor
-    voice "voice/R_2_31_1.mp3"
+    show Rafael at Move(one_left, center, slow_step), centerAnchor
+    voice "voice/R_2_31_1.wav"
     Rafael "Ah... I see. You don't have to explain. I understand, we haven't kept contact in so long and I guess our relationship has always been as friends. Haha!"
 
     show Aurora at Move(two_right, one_right, one_step), centerAnchor
     Aurora "I'm sorry Rafael, I... I..."
 
-    show Rafael at Move(two_left, left_3, slow_step), centerAnchor
-    voice "voice/R_2_31_2.mp3"
+    show Rafael at Move(center, two_left, three_step), centerAnchor
+    voice "voice/R_2_31_2.wav"
     Rafael "Don't worry about it Aurora. I just said that to get it off my chest, so.. don't be too worried about me."
 
     call SadMusic
@@ -1472,8 +1472,8 @@ label route31:
     pause one_step
     show Anthony Sad at Move(offscreen_right_6, four_left, six_step + six_step), centerAnchor
     pause one_step
-    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
-    show Aurora at Move(one_right, one_left, two_step), centerAnchor
+    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor behind Anthony
+    show Aurora at Move(one_right, center, one_step), centerAnchor
     "Celestia and Luis walk in with puffy red eyes that seem to have come from a long heart-to-heart."
 
     jump scene3
@@ -1494,7 +1494,7 @@ label route32:
     show Aurora at Move(center, one_right, slow_step), centerAnchor
     pause slow_step
     show Aurora behind Rafael
-    voice "voice/R_2_32_1.mp3"
+    voice "voice/R_2_32_1.wav"
     Rafael "Aurora, I promise you, I love you... And I will protect you, despite my shortcomings."
 
     "And as our faces draw close together, staring longingly in each others' eyes like a stillshot moment in a romance movie, suddenly Luis and Celestia walk in, arm-in-arm, with visibly puffy eyes after what seems to have been an equally meaningful make up between them. Anthony and Jonathan tail closely after them."
@@ -1520,7 +1520,7 @@ label route33:
     Aurora "Me? But, it's been so long since then Rafael. A lot has changed."
 
     show Rafael Neutral at Move(one_left, two_left, one_step), centerAnchor
-    voice "voice/R_2_33_1.mp3"
+    voice "voice/R_2_33_1.wav"
     Rafael "I know Aurora. But those memories mean the world to me. You mean the world to me. And if it means making new memories together, then... I will do everything I can."
 
     "With a face of conviction I was surprised to see on Rafael for the first time I could remember, I can't help but feel grateful to know him. And with that fleeting moment passing, Celestia and Luis walk in with puffy red eyes that seem to have come from a long heart-to-heart."
@@ -1529,7 +1529,7 @@ label route33:
     pause quick_step
     show Luis Sad at Move(offscreen_right_6, right_3, three_step), centerAnchor behind Celestia
     pause one_step
-    show Anthony Sad at Move(offscreen_right_6, four_left, six_step + six_step), centerAnchor
+    show Anthony Sad at Move(offscreen_right_6, five_left, six_step + six_step), centerAnchor
     pause one_step
     show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
     show Aurora at Move(two_right, center, two_step), centerAnchor
@@ -1605,116 +1605,223 @@ label end113:
 label end121:
     "I look to Celestia glad I was able to be a bridge between the two of them"
 
+    show Aurora Neutral at Move(center, one_right, one_step), centerAnchor
     Aurora "Celestia, Luis, I accept your apologies."
 
+    show Luis Neutral at Move(four_right, five_right, slow_step), centerAnchor behind Celestia
     voice "voice/L_3_121_1.mp3"
     Luis "Thank you Aurora. I truly did come short, but I am grateful to you and my dear Celestia for putting both your faiths in me."
 
+    show Celestia Happy at Move(right_3, four_right, slow_step), centerAnchor
     voice "voice/C_3_121_1.mp3"
     Celestia "Thank you Aurora. I misjudged you. Without you... You really saved us. Thank you..."
 
+    show Aurora Happy at Move(one_right, right_3, slow_step), centerAnchor behind Celestia
+    pause one_step
+    show Luis Happy at Move(five_right, far_five_right, one_step), centerAnchor
     "And without thinking, I give Celestia a tight hug, grateful. Luis is looking over our shoulders glad. I hope this can be the start of a truly powerful friendship with everyone. Looks like I did achieve my goal of making friends afterall, despite the chaos that is..."
+    show black with dissolve
 
     return
 
 label end131:
+
+    show Aurora Confused at Move(one_left, two_left, slow_step), centerAnchor
+    show Anthony behind Aurora
     Aurora "I... I... uh..."
 
     "I did not know where this was coming from. Could they be pulling my leg? Did they pull theatrics? I didn't quite understand. And as I stood there honestly confused, perhaps my face gave me away."
 
+    show Anthony Sad at Move(left_3, four_left, slow_step), centerAnchor
+    show Luis Sad
+    show Celestia Sad
+    show Jonathan Sad
+    show Rafael Sad
     voice "voice/A_3_131_1.mp3"
     Anthony "Aurora? Are you ok?"
 
     "Anthony's face was concerned. I looked to Rafael, to everyone, even to Jonathan. They were all concerned. Do they not realize just how weird this all is?"
 
-    "Moments that felt like lifetimes passed and I did not know what to do. I decided to just leave, an ordinary girl like me probably couldn't understand them anyway. And with that, I decided to go back to my tried and tested method of not drawing attention to myself anymore. I tried to make a splash but it wasn't for me afterall."
+    show black with dissolve
+    "Moments that felt like lifetimes passed and I did not know what to do. I decided to just leave, an ordinary girl like me probably couldn't understand them anyway." 
+    
+    "And with that, I decided to go back to my tried and tested method of not drawing attention to myself anymore. I tried to make a splash but it wasn't for me afterall."
+    show black with dissolve
 
     return
 
 label end132:
+    
+    show Rafael Sad at four_left_pos
+    show Anthony Sad at two_left_pos
+    show Jonathan Neutral at Move(offscreen_right_6, one_left, eight_step), centerAnchor
+    show Aurora Neutral at Move(offscreen_right_6, center, six_step), centerAnchor 
+    show Celestia at Move(four_right, right_3, one_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
+    
+    show Aurora Happy at Move(center, one_right, one_step), centerAnchor
     Aurora "I... I... uh... appreciate it you guys... and I accept your apology."
 
-    "And with that, all the tension left me and the others. Everything was relieved, I guess even the most prestigious cast you could find really were just people like me and like Jonathan. At that moment I thought to myself, why did I ever think they were any different from me? They were people afterall."
+    show Rafael Happy
+    show Anthony Happy
+    show Jonathan Happy
+    show Celestia Happy
+    show Luis Happy
+    "And with that, all the tension left me and the others." 
+    
+    "Everything was relieved, I guess even the most prestigious cast you could find really were just people like me and like Jonathan. At that moment I thought to myself, why did I ever think they were any different from me? They were people afterall."
 
+    show black with dissolve
     "Holding that thought in my heart, I lived each day from then on grateful to have these people as study mates. I was grateful for their humanity. I was grateful for them as people. And I am grateful that I got to meet these people for who they were..."
+    show black with dissolve
 
     return
 
 label end21:
-    "And as those two extended a sincere apology, I couldn't help but look to Anthony for advice. His face was staring back at me with such care and gentleness you wouldn't expect from such a fiery person."
 
+    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
+    show Rafael Neutral at Move(offscreen_right_6, four_left, eight_step + four_step), centerAnchor
+    show Anthony at Move(one_left, two_left, slow_step), centerAnchor
+    show Aurora Sad at Move(center, one_left, slow_step), centerAnchor
+    show Celestia at Move(four_right, right_3, one_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
+
+    show Aurora Confused
+    show Anthony Happy behind Aurora
+    "And as those two extended a sincere apology, I couldn't help but look to Anthony for advice. His face was staring back at me with such care and gentleness you wouldn't expect from such a fiery person."
+    
+    show Anthony at Move(two_left, left_3, slow_step), centerAnchor
     voice "voice/A_3_21_1.mp3"
     Anthony "Go ahead..."
 
+    show Aurora Neutral
     "With a deep inhale, and for a split second realizing I had somehow confessed to Anthony just moments earlier, I put my best foot forward to Luis and Celestia"
 
+    show Aurora Happy at Move(one_left, center, slow_step), centerAnchor
     Aurora "Thank You! I appreciate your sincere apology."
 
+    show Anthony at Move(left_3, two_left, quick_step), centerAnchor
+    pause quick_step
+    show Anthony at Move(two_left, one_left, one_step), centerAnchor behind Aurora
     "Laughing, Anthony motions to pat my back quite forcefully, softens his pat and lands his arm on my shoulder. I couldn't help but think about the warmth coming from him."
 
+    show Anthony at Move(one_left, two_left, slow_step), centerAnchor
     voice "voice/A_3_21_2.mp3"
     Anthony "Hahaha! You don't have to be so formal! Haha!"
 
-    "And with that, and me now completely distracted by Anthony's musky but surprisingly warm and complex cologne he had on, we continued our study session renewed and glad. Me and Anthony would pair up for the rest of the session, secretly excited to get to talk about things besides studies once the session was over."
+    "And with that, and me now completely distracted by Anthony's musky but surprisingly warm and complex cologne he had on, we continued our study session renewed and glad." 
+    
+    show black with dissolve
+    "Me and Anthony would pair up for the rest of the session, secretly excited to get to talk about things besides studies once the session was over."
 
     "Once the session finished, Anthony invited me to his varsity training that he was going to. Of course, I said yes. Excited, I followed his lead, we would chat and talk about all sorts of things, from his childhood to mine, to our favorite restaurants in the area, and so on."
 
     "And as the Golden Hour set in, I couldn't help but think how grateful I was that I took a chance..."
+    show black with dissolve
 
     return
 
 label end22:
+    
+    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
+    show Rafael Neutral at Move(offscreen_right_6, five_left, eight_step + four_step), centerAnchor
+    show Anthony at left_3
+    show Aurora at Move(one_right, one_left, three_step), centerAnchor
+    show Celestia at Move(four_right, right_3, one_step), centerAnchor
+    show Luis at Move(right_3, four_right, one_step), centerAnchor
+
+    show Aurora Happy at Move(one_left, center, one_step), centerAnchor
+    show Jonathan Happy
+    show Rafael Happy
+    show Anthony Happy
+    show Celestia Happy
+    show Luis Happy
     Aurora "Guys... I... I.. uh... Really appreciate your..."
 
+    call HappyMusic
+    show Anthony at Move(left_3, right_3, four_step), centerAnchor behind Celestia
+    show Luis behind Anthony
+    pause two_step
+    show Celestia at Move(right_3, two_right, quick_step), centerAnchor
     "And as eek out accepting their apology, Anthony suddenly pushes past me and hugs the two tightly"
 
     voice "voice/A_3_22_1.mp3"
     Anthony "Guys! Hahaha! I'm glad! Hahaha!"
 
+    show Celestia at Move(two_right, one_right, quick_step), centerAnchor
+    show Anthony at Move(right_3, two_right, quick_step), centerAnchor
+    show Luis at Move(four_right, right_3, quick_step), centerAnchor
     voice "voice/C_3_22_1.mp3"
     Celestia "Hey! Wait! Where are you..."
 
+    show Celestia at Move(one_right, two_right, quick_step), centerAnchor
+    show Anthony at Move(two_right, right_3, quick_step), centerAnchor
+    show Luis at Move(right_3, four_right, quick_step), centerAnchor
     voice "voice/L_3_22_1.mp3"
     Luis "Hahaha! Anthony! Haha! I... I... can't breathe!!!"
 
     voice "voice/A_3_22_2.mp3"
     Anthony "I'm so glad I have you guys!!! Just moments earlier I thought I was useless! But now... I'm so grateful to have friends! I love you guys!!"
 
+    show Celestia at Move(two_right, one_right, quick_step), centerAnchor
+    show Anthony at Move(right_3, two_right, quick_step), centerAnchor
+    show Luis at Move(four_right, right_3, quick_step), centerAnchor
     voice "voice/C_3_22_2.mp3"
     Celestia "Arghhh..."
 
+    show Celestia at Move(one_right, two_right, quick_step), centerAnchor
+    show Anthony at Move(two_right, right_3, quick_step), centerAnchor
+    show Luis at Move(right_3, four_right, quick_step), centerAnchor
     voice "voice/L_3_22_2.mp3"
     Luis "Arghhh...."
 
+    show Aurora at Move(center, one_left, one_step), centerAnchor
     Aurora "Anthony... I... Uh... I think you should let them go..."
 
+    call TenderMusic
     "And with Anthony ignoring me and maybe even hugging Celestia and Luis even tighter, and with Rafael and Jonathan stepping nowhere close to Anthony lest they also get bearhugged. I laugh to myself, grateful we were able to resolve our difficulties."
 
     "They say that we have to present our best selves to others, but I imagine, it's in presenting our worst selves that we learn who we can really rely on..."
+    show black with dissolve
 
     return
 
 label end31:
-    "I look at Celetia's tired and grief stricken face. I turn to Luis who is equally drained. I linger looking at Rafael's silently broken facade. I too feel tired."
 
+    show Aurora Sad
+    show Rafael Sad
+    show Celestia Sad
+    "I look at Celestia's tired and grief stricken face. I turn to Luis who is equally drained. I linger looking at Rafael's silently broken facade. I too feel tired."
+
+    show Aurora Sad at Move(center, one_left, slow_step), centerAnchor
+    show Rafael behind Aurora
     Aurora "I... I accept your apology... I hope... we can all still be good friends."
 
-    voice "voice/R_3_31_1.mp3"
+    show Rafael at Move(two_left, left_3, slow_step), centerAnchor
+    show Anthony behind Rafael
+    voice "voice/R_3_31_1.wav"
     Rafael "Friends... right..."
 
     "Rafael's facade, which had initially hidden his feelings, began to crack."
 
+    show Anthony Sad at Move(four_left, five_left, slow_step), centerAnchor
     voice "voice/A_3_31_1.mp3"
     Anthony "Rafael? Dude? Are you... ok?"
 
+    show Luis Happy at Move(four_right, five_right, slow_step), centerAnchor
     voice "voice/L_3_31_1.mp3"
     Luis "He must be. He got to spend some quality time with his childhood love..."
 
-    voice "voice/R_3_31_2.mp3"
+    show Rafael at Move(left_3, two_left, quick_step), centerAnchor
+    pause quick_step
+    show Aurora Confused at Move(one_left, center, quick_step), centerAnchor
+    voice "voice/R_3_31_2.wav"
     Rafael "... I've had enough with all of you... Luis, Anthony... I... I wish... I could be like you. And... Aurora... I think... it was nice spending some time with you after all this time, goodbye."
 
+    show Rafael at Move(two_left, offscreen_right_6, eight_step), centerAnchor
     "And with that, Rafael left the room melancholic, his eyes empty, his face blank. I could tell, he was holding all his insecurities in too keep up what little facade he could keep. He looked so serious that no one dared to try to stop him."
 
+    show black with dissolve
     "We decided to disband for the day, we were all so emotionally drained, though I felt the weight of Rafael's last words to me. Did I say something I shouldn't have? Was there something I didn't understand?"
 
     "Days passed, the group got back together for another session, with renewed energy we were all able to make amends fully. Rafael did come but he has disconnected, maybe tired?"
@@ -1722,28 +1829,44 @@ label end31:
     "Weeks passed, we had more and more study sessions, even meetups outside of studying too! Though, Rafael showed up less and less, and eventually he just faded away."
 
     "At first we were concerned, eventually we lost hope, he never did respond to our attempts of contact. Then we forgot. We were happy, but in my heart of hearts I always wondered if things could have played out differently for my childhood friend."
+    show black with dissolve
 
     return
 
 label end32:
-    "In that moment, I felt a genuine sense of relief. Though things got rocky and unsure, things were able to work out in the end. And as I turn to Rafael, feeling my cheeks and my racing heart, realizing we had just confessed moments ago, he gazes back at me with a loving smile."
 
-    voice "voice/R_3_32_1.mp3"
+    "In that moment, I felt a genuine sense of relief. Though things got rocky and unsure, things were able to work out in the end. And as I turn to Rafael, feeling my cheeks and my racing heart, realizing we had just confessed moments ago, he gazes back at me with a loving smile."
+    
+    show Rafael Happy at Move(one_left, two_left, slow_step), centerAnchor
+    voice "voice/R_3_32_1.wav"
     Rafael "Aurora... I'm glad we ended up with these people... And I'm glad we ended up together..."
 
+    show Aurora Happy at Move(center, one_left, slow_step), centerAnchor
+    show Jonathan Neutral
+    show Anthony Happy
+    show Luis Happy
+    show Celestia Happy
     "With a warm and fuzzy feeling deep in my heart, coming from the feelings I felt towards the coolest guy I know. I felt a deep sense of gladness that we ended up in this study group together..."
+    show black with dissolve
 
     return
 
 label end33:
+
+    show Aurora Confused
+    show Rafael Neutral behind Aurora
     "I look towards Celestia, unsure of myself. Then towards Rafael beside me, a face filled with a newfound determination, and I find in him newfound confidence in myself. That I was acknowledged by both Luis and Celestia, that I had been remembered all this time by even someone as amazing as Rafael."
 
-    voice "voice/R_3_33_1.mp3"
+    show Rafael Happy at Move(two_left, right_3, slow_step), centerAnchor
+    voice "voice/R_3_33_1.wav"
     Rafael "Aurora...? What are you staring at me for? I... I... Uhm... I think you should accept their apology. And, once you do, we can all keep making memories together."
 
+    show Luis Neutral at Move(four_right, five_right, slow_step), centerAnchor
     voice "voice/L_3_33_1.mp3"
     Luis "Oh? Mr. Cool getting a little bit sentimental? Well... We truly are sorry Aurora."
 
+    show black with dissolve
     "And with that, I decided to accept Luis and Celestia's apology. Remembering my memories with Rafael, though having been a long time ago, only left me with the wish to make many more memories with my newfound friends."
+    show black with dissolve
 
     return
