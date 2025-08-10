@@ -7,10 +7,10 @@ image bg library       = "images/backgrounds/library.png"
 image bg studyroom     = "images/backgrounds/study.png"
 
 label HappyMusic:
-    play music "music/LittleMelodyPeace.mp3" fadeout 1.0 fadein 1.0
+    play music "music/HappychillAlt.mp3" fadeout 1.0 fadein 1.0
     return
 label SadMusic:
-    play music "music/MoonlightLimgraveSad.mp3" fadeout 1.0
+    play music "music/Sad.wav" fadeout 1.0
     return
 label ChaosMusic:
     play music "music/MoonlightLimgraveChaos.mp3"
@@ -734,7 +734,6 @@ label route113:
     voice "voice/L_2_113_2.mp3"
     Luis "Ok, if you're sure. I'll do anything for my dear Celestia. And if it means opening my heart to her now, it will have to do."
 
-    call SadMusic
     show Luis at Move(two_left, offscreen_right_6, eight_step), centerAnchor
     pause four_step
     show Aurora at Move(one_right, offscreen_right_6, six_step), centerAnchor
@@ -744,6 +743,7 @@ label route113:
     with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
     pause two_step
     show Aurora Sad at Move(offscreen_left_6, left_3, four_step), centerAnchor
+    call SadMusic
     "And so me and Luis set off to find Celestia. We found her curled up in a hidden away aisle." 
     
     call TenderMusic
@@ -877,11 +877,11 @@ label route122:
     show Aurora Confused at Move(two_left, one_left, quick_step), centerAnchor
     Aurora "He failed you Celestia, I think you should choose yourself for once."
 
+    call SadMusic
     show Celestia at Move(right_3, four_right, slow_step), centerAnchor
     voice "voice/C_2_122_1.mp3"
     Celestia "Sigh... I guess you're right. I've spent years trying to get him to notice me, to realize how much I care, and he never fails to tire me out... I'll give it a thought Aurora, I care for him oh so deeply, but he wont look my way..."
 
-    call SadMusic
     "We sit there in silence for a moment. Celestia looks mournful but determined, it appears she really is thinking through what I said." 
     
     show Celestia at Move(four_right, left_3, six_step), centerAnchor
@@ -1492,8 +1492,6 @@ label route32:
     show Rafael Neutral at Move(one_left, center, slow_step), centerAnchor behind Aurora
     pause quick_step
     show Aurora at Move(center, one_right, slow_step), centerAnchor
-    pause slow_step
-    show Aurora behind Rafael
     voice "voice/R_2_32_1.wav"
     Rafael "Aurora, I promise you, I love you... And I will protect you, despite my shortcomings."
 
@@ -1652,13 +1650,6 @@ label end131:
 
 label end132:
     
-    show Rafael Sad at four_left_pos
-    show Anthony Sad at two_left_pos
-    show Jonathan Neutral at Move(offscreen_right_6, one_left, eight_step), centerAnchor
-    show Aurora Neutral at Move(offscreen_right_6, center, six_step), centerAnchor 
-    show Celestia at Move(four_right, right_3, one_step), centerAnchor
-    show Luis at Move(right_3, four_right, one_step), centerAnchor
-    
     show Aurora Happy at Move(center, one_right, one_step), centerAnchor
     Aurora "I... I... uh... appreciate it you guys... and I accept your apology."
 
@@ -1678,13 +1669,6 @@ label end132:
     return
 
 label end21:
-
-    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
-    show Rafael Neutral at Move(offscreen_right_6, four_left, eight_step + four_step), centerAnchor
-    show Anthony at Move(one_left, two_left, slow_step), centerAnchor
-    show Aurora Sad at Move(center, one_left, slow_step), centerAnchor
-    show Celestia at Move(four_right, right_3, one_step), centerAnchor
-    show Luis at Move(right_3, four_right, one_step), centerAnchor
 
     show Aurora Confused
     show Anthony Happy behind Aurora
@@ -1722,13 +1706,6 @@ label end21:
     return
 
 label end22:
-    
-    show Jonathan Sad at Move(offscreen_right_6, far_five_left, six_step + six_step), centerAnchor
-    show Rafael Neutral at Move(offscreen_right_6, five_left, eight_step + four_step), centerAnchor
-    show Anthony at left_3
-    show Aurora at Move(one_right, one_left, three_step), centerAnchor
-    show Celestia at Move(four_right, right_3, one_step), centerAnchor
-    show Luis at Move(right_3, four_right, one_step), centerAnchor
 
     show Aurora Happy at Move(one_left, center, one_step), centerAnchor
     show Jonathan Happy
@@ -1857,7 +1834,7 @@ label end33:
     show Rafael Neutral behind Aurora
     "I look towards Celestia, unsure of myself. Then towards Rafael beside me, a face filled with a newfound determination, and I find in him newfound confidence in myself. That I was acknowledged by both Luis and Celestia, that I had been remembered all this time by even someone as amazing as Rafael."
 
-    show Rafael Happy at Move(two_left, right_3, slow_step), centerAnchor
+    show Rafael Happy at Move(two_left, left_3, slow_step), centerAnchor
     voice "voice/R_3_33_1.wav"
     Rafael "Aurora...? What are you staring at me for? I... I... Uhm... I think you should accept their apology. And, once you do, we can all keep making memories together."
 
