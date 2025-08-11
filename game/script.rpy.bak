@@ -160,7 +160,7 @@ label start:
     $ went_route_33 = False
 
     scene bg library
-    call HappyMusic from _call_HappyMusic
+    call HappyMusic
 
     show Aurora Happy at center_pos
     "Woah, the library really is amazing here. My first year at such a prestigious school, all thanks to the hard work I put in to getting accepted in Business Management."
@@ -202,7 +202,7 @@ label start:
     voice "voice/C_1_2.mp3"
     Celestia "Oh... Ms Aurora... Hmm... Well I wont blame someone of your background for being blindsided by this buffoon."
 
-    call SadMusic from _call_SadMusic
+    call SadMusic
     show Aurora Sad at Move (left_3, four_left, one_step), centerAnchor
     show Celestia Mad at Move(right_3, one_left, four_step), centerAnchor
     show Luis Sad at Move(center, one_right, one_step), centerAnchor
@@ -213,7 +213,7 @@ label start:
     show Aurora Confused at Move(four_left, left_3, one_step), centerAnchor
     Aurora "Ah! Erm..."
 
-    call HappyMusic from _call_HappyMusic_1
+    call HappyMusic
     show Luis Happy at Move(one_right, center, one_step), centerAnchor
     voice "voice/L_1_5.mp3"
     Luis "Oh, don't worry about her, she may be my betrothed, but only because of the arrangement between our families. Yes, she may be beautiful, but it really is what's in the heart that counts. As for you my dear Aurora, I actually find you quite beautiful, from the outside, and I suspect on the inside too."
@@ -368,7 +368,7 @@ label scene2:
     show Rafael at Move(one_right, one_left, one_step), centerAnchor
     pause two_step
 
-    call ChaosMusic from _call_ChaosMusic
+    call ChaosMusic
     show Celestia Mad
     show Aurora Confused at Move(four_right, five_right, quick_step), centerAnchor
     with Fade(out_time=0.2, hold_time=0.0, in_time=0.2, color="#ffffff")
@@ -389,7 +389,7 @@ label scene2:
     show Luis at Move(one_right, offscreen_right_6, three_step), centerAnchor
     "And so Celestia storms off out of the study room into the library. Luis, promptly leaves after her"
 
-    call SadMusic from _call_SadMusic_1
+    call SadMusic
     show Anthony Sad at Move(four_left, one_right, two_step), centerAnchor
     show Rafael behind Anthony
     voice "voice/A_2_1.mp3"
@@ -467,7 +467,7 @@ label route1:
     show Aurora at Move(right_3, offscreen_right_6, two_step), centerAnchor
     pause two_step
 
-    call SadMusic from _call_SadMusic_2
+    call SadMusic
     scene bg library
     show Jonathan Sad at Move(five_left, one_right, six_step), centerAnchor
     show Aurora Sad at Move(offscreen_left_6, one_left, six_step), centerAnchor
@@ -504,7 +504,7 @@ label route11:
     voice "voice/L_2_11_2.mp3"
     Luis "Oh hello my beautiful Ms. Aurora. Apologies for that unfortunate display. I left to initially find my dearest Celestia and smooth things over."
 
-    call TenderMusic from _call_TenderMusic
+    call TenderMusic
     show Luis Neutral at Move(left_3, four_left, one_step), centerAnchor
     voice "voice/L_2_11_3.mp3"
     Luis "But, to be honest I had something to think about. About me and Ms. Celestia. And so, you find me here staring off into the distance."
@@ -559,7 +559,7 @@ label route111:
     show Aurora Sad at Move(right_3, two_right, quick_step), centerAnchor
     Aurora "No Luis, it's not your fault. She slapped me! Yes, maybe you overstepped a little bit, but she slapped me!"
 
-    call SadMusic from _call_SadMusic_3
+    call SadMusic
     show Luis Mad at Move(four_left, five_left, quick_step), centerAnchor
     "Luis looks at me taken aback with a seriousness behind it. His earlier warmth now surprisingly seemingly turning cold"
 
@@ -665,7 +665,7 @@ label route112:
 
     "As the two of us stared off into the clouds for only a few moments which felt like an eternity together. We decided that it was about time to go back to the room." 
 
-    call SadMusic from _call_SadMusic_4
+    call SadMusic
     scene bg studyroom
     show Jonathan Neutral at far_five_left_pos
     show Rafael Sad at five_left_pos
@@ -743,10 +743,10 @@ label route113:
     with Fade(out_time=0.5, hold_time=0.0, in_time=0.5, color="#000000")
     pause two_step
     show Aurora Sad at Move(offscreen_left_6, left_3, four_step), centerAnchor
-    call SadMusic from _call_SadMusic_5
+    call SadMusic
     "And so me and Luis set off to find Celestia. We found her curled up in a hidden away aisle." 
     
-    call TenderMusic from _call_TenderMusic_1
+    call TenderMusic
     show Luis at Move(center, two_right, slow_step), centerAnchor behind Celestia
     pause slow_step
     show Aurora Happy
@@ -797,7 +797,7 @@ label route12:
 
     "Celestia looks at me with a dejected look, it is one of sincerity and regret but also of pain."
 
-    call TenderMusic from _call_TenderMusic_2
+    call TenderMusic
     show Celestia at Move(four_right, right_3, one_step), centerAnchor
     voice "voice/C_2_12_2.mp3"
     Celestia "I'm sorry about all that drama. To be honest, I think I got a bit too wound up with Luis. I'm sorry about being so protective about him. To be honest, I love that man way too much, and to be honest, more than he really deserves, but he is my light and I love him for it."
@@ -877,7 +877,7 @@ label route122:
     show Aurora Confused at Move(two_left, one_left, quick_step), centerAnchor
     Aurora "He failed you Celestia, I think you should choose yourself for once."
 
-    call SadMusic from _call_SadMusic_6
+    call SadMusic
     show Celestia at Move(right_3, four_right, slow_step), centerAnchor
     voice "voice/C_2_122_1.mp3"
     Celestia "Sigh... I guess you're right. I've spent years trying to get him to notice me, to realize how much I care, and he never fails to tire me out... I'll give it a thought Aurora, I care for him oh so deeply, but he wont look my way..."
@@ -1033,7 +1033,7 @@ label route131:
 
 label route132:
     $ went_route_132 = True
-    call TenderMusic from _call_TenderMusic_3
+    call TenderMusic
     show Aurora at Move(left_3, four_left, slow_step), centerAnchor
     Aurora "Actually, I think I feel sorry for them, Jonathan. Yes, they may be so amazing and prestigious, much more amazing than me. But, they're just human too, with messy, vulnerable feelings."
 
@@ -1110,7 +1110,7 @@ label route2:
     voice "voice/R_2_2_2.wav"
     Rafael "But don't try to do anything funny with Aurora ok?"
 
-    call Silence from _call_Silence
+    call Silence
     show Rafael Neutral at Move(two_right, offscreen_right_6, four_step), centerAnchor
     show Aurora behind Rafael
     show Anthony behind Rafael
@@ -1120,7 +1120,7 @@ label route2:
     show Anthony behind jonathan_neutral
     "With that, Rafael leaves the room with a determined look, with Jonathan tailing meekly behind him"
 
-    call SadMusic from _call_SadMusic_7
+    call SadMusic
     show Anthony at Move(two_left, left_3, slow_step), centerAnchor
     voice "voice/A_2_2_3.mp3"
     Anthony "Phew... to be honest Aurora, I didn't know what we should do there. Wait. Should I have gone instead? Does that make me a bad friend that I stayed behind so easily?"
@@ -1135,7 +1135,7 @@ label route2:
     show Aurora at Move(four_right, right_3, slow_step), centerAnchor
     Aurora "What are you saying Anthony?"
 
-    call TenderMusic from _call_TenderMusic_4
+    call TenderMusic
     show Anthony at Move(two_left, left_3, slow_step), centerAnchor
     voice "voice/A_2_2_5.mp3"
     Anthony "Well, to be honest, I only entered business school cause it was the only scholarship I could get. My school has a tie up with the university you see, coming from a small school makes your opportunities a lot more limited. And, to be honest, I'm way out of my depth here. I realized that in my first year. And, being here in this study group, to be honest, has been a reality check for me that I have to step up my game even harder."
@@ -1276,7 +1276,7 @@ label route23:
     voice "voice/A_2_23_2.mp3"
     Anthony "What do you mean my results don't matter Aurora?"
 
-    call ChaosMusic from _call_ChaosMusic_1
+    call ChaosMusic
     show Anthony Mad at Move(four_left, left_3, quick_step), centerAnchor
     show Aurora Sad
     voice "voice/A_2_23_3.mp3"
@@ -1338,13 +1338,13 @@ label route23:
     voice "voice/R_2_23_1.wav"
     Rafael "Can you guys stop... Anthony! Celestia! Luis! Can you please just..."
 
-    call Silence from _call_Silence_1
+    call Silence
     "And as Rafael says that, everyone comes to their senses and a silence blankets the room like a thick fog."
 
     show black with dissolve
     "Celestia is the first to leave. Followed by Anthony. Luis follows. Then Jonathan. Rafael turns to me trying to say something, but he hesitates."
 
-    call SadMusic from _call_SadMusic_8
+    call SadMusic
     "I received a text, a reassignment to a different study group... I do not know where the rest were reassigned and I hear nothing of them again... Did I do something wrong?..."
     show black with dissolve
 
@@ -1354,7 +1354,7 @@ label route3:
     show Aurora at Move(four_right, five_right, slow_step), centerAnchor
     Aurora "Uhm... Ok... I'll stay here with Rafael."
 
-    call Silence from _call_Silence_2
+    call Silence
     show Anthony at Move(center, offscreen_right_6, six_step), centerAnchor
     pause quick_step
     show Jonathan at Move(five_left, offscreen_right_6, six_step + six_step), centerAnchor
@@ -1374,7 +1374,7 @@ label route3:
     show Aurora at Move(four_right, right_3, one_step), centerAnchor
     Aurora "What do you mean?"
 
-    call TenderMusic from _call_TenderMusic_5
+    call TenderMusic
     show Rafael at Move(center, one_left, slow_step), centerAnchor
     voice "voice/R_2_3_3.wav"
     Rafael "Well... To be honest Aurora, you're the only person I think I can feel comfortable with, ever since we used to study together. I'm always supposed to keep up this unaffected mask. Be it studies or socializing, people know me as the cool guy but I don't know how to get out."
@@ -1419,7 +1419,7 @@ label route3:
     show Aurora at Move(one_right, two_right, quick_step), centerAnchor
     Aurora "Wait... You like someone, Rafael?"
 
-    call Silence from _call_Silence_3
+    call Silence
     show Rafael Neutral
     "Rafael looks deeply into my eyes with a renewed conviction"
 
@@ -1430,7 +1430,7 @@ label route3:
     show Aurora at Move(two_right, one_right, one_step), centerAnchor
     Aurora "Oho... Who... is uhm... who is she?"
 
-    call TenderMusic from _call_TenderMusic_6
+    call TenderMusic
     show Rafael Happy at Move(two_left, one_left, slow_step), centerAnchor
     voice "voice/R_2_3_11.wav"
     Rafael "You Aurora, I like you... I've loved you through all of our memories together."
@@ -1463,7 +1463,7 @@ label route31:
     voice "voice/R_2_31_2.wav"
     Rafael "Don't worry about it Aurora. I just said that to get it off my chest, so.. don't be too worried about me."
 
-    call SadMusic from _call_SadMusic_9
+    call SadMusic
     "And as I look at Rafael's normally calm face, still calm but somehow broken, I cannot help but feel sorry." 
     
     show Celestia Sad at Move(offscreen_right_6, two_right, four_step), centerAnchor
@@ -1715,7 +1715,7 @@ label end22:
     show Luis Happy
     Aurora "Guys... I... I.. uh... Really appreciate your..."
 
-    call HappyMusic from _call_HappyMusic_2
+    call HappyMusic
     show Anthony at Move(left_3, right_3, four_step), centerAnchor behind Celestia
     show Luis behind Anthony
     pause two_step
@@ -1755,7 +1755,7 @@ label end22:
     show Aurora at Move(center, one_left, one_step), centerAnchor
     Aurora "Anthony... I... Uh... I think you should let them go..."
 
-    call TenderMusic from _call_TenderMusic_7
+    call TenderMusic
     "And with Anthony ignoring me and maybe even hugging Celestia and Luis even tighter, and with Rafael and Jonathan stepping nowhere close to Anthony lest they also get bearhugged. I laugh to myself, grateful we were able to resolve our difficulties."
 
     "They say that we have to present our best selves to others, but I imagine, it's in presenting our worst selves that we learn who we can really rely on..."
